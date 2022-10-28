@@ -1,0 +1,18 @@
+{
+  "name": "money-forward-attendance-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "ryohey",
+  "license": "MIT",
+  "dependencies": {
+    "keytar": "^7.9.0",
+    "promptly": "^3.2.0",
+    "puppeteer": "^19.2.0"
+  }
+}
