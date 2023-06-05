@@ -119,7 +119,7 @@ async function getAuthorizedPage(browser) {
 }
 
 export async function clockIn() {
-  const browser = await launch({ headless: false })
+  const browser = await launch()
   const page = await getAuthorizedPage(browser)
 
   await page.goto("https://attendance.moneyforward.com/my_page")
