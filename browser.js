@@ -47,8 +47,8 @@ async function authorizeMoneyForwardID(page) {
   await page.type('input[type="email"]', email)
 
   // 送信ボタンクリック
-  await page.waitForSelector("input[type=submit]")
-  await page.click("input[type=submit]")
+  await page.waitForSelector("#submitto")
+  await page.click("#submitto")
 
   await page.waitForNavigation()
 
@@ -57,8 +57,8 @@ async function authorizeMoneyForwardID(page) {
   await page.type("input[type=password]", password)
 
   // 送信ボタンクリック
-  await page.waitForSelector("input[type=submit]")
-  await page.click("input[type=submit]")
+  await page.waitForSelector("#submitto")
+  await page.click("#submitto")
 
   await page.waitForNavigation()
 
