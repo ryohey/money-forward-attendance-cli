@@ -50,8 +50,6 @@ async function authorizeMoneyForwardID(page) {
   await page.waitForSelector("#submitto")
   await page.click("#submitto")
 
-  await page.waitForNavigation()
-
   // パスワード入力
   await page.waitForSelector("input[type=password]")
   await page.type("input[type=password]", password)
