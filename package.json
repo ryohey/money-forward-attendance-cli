@@ -11,9 +11,9 @@
   "author": "ryohey",
   "license": "MIT",
   "dependencies": {
-    "@inquirer/prompts": "^2.1.0",
-    "keytar": "^7.9.0",
+    "@inquirer/prompts": "^5.0.4",
+    "keytar-sync": "^7.9.1",
     "promptly": "^3.2.0",
-    "puppeteer": "^19.2.0"
+    "puppeteer": "^22.10.0"
   }
 }

@@ -1,4 +1,4 @@
-import keytar from "keytar"
+import keytar from "keytar-sync"
 import promptly from "promptly"
 import { select } from "@inquirer/prompts"
 import assert from "assert"
