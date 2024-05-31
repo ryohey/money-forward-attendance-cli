@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import { clockIn, clockOut } from "./browser.js"
 
+const noHeadless = process.argv.includes("--no-headless")
+
 try {
   if (process.argv[2] === undefined) {
     throw new Error("Please provide the command (clock)")
@@ -12,10 +14,10 @@ try {
       }
       switch (process.argv[3]) {
         case "in":
-          await clockIn()
+          await clockIn(!noHeadless)
           break
         case "out":
-          await clockOut()
+          await clockOut(!noHeadless)
           break
         default:
           throw new Error(`unknown option: ${process.argv[3]}`)

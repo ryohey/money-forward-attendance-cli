@@ -118,8 +118,8 @@ async function getAuthorizedPage(browser) {
   return page
 }
 
-export async function clockIn() {
-  const browser = await launch()
+export async function clockIn(headless) {
+  const browser = await launch({ headless })
   const page = await getAuthorizedPage(browser)
 
   await page.goto("https://attendance.moneyforward.com/my_page")
@@ -141,8 +141,8 @@ export async function clockIn() {
   console.log("Clock-in success")
 }
 
-export async function clockOut() {
-  const browser = await launch()
+export async function clockOut(headless) {
+  const browser = await launch(headless)
   const page = await getAuthorizedPage(browser)
 
   await page.goto("https://attendance.moneyforward.com/my_page")
